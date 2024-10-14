@@ -1,0 +1,11 @@
+version: '3'
+services:
+  haproxy_nginx:
+    image: harshit05/docker-challenge-solved-harshit
+    ports:
+      - "80:80"
+
+  metrics_scraper:
+    image: prom/node-exporter
+    ports:
+      - "9100:9100"
